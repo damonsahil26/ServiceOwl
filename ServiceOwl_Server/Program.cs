@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using ServiceOwl_Application.Service;
+using ServiceOwl_Application.Service.IService;
 using ServiceOwl_DataAccess;
+using ServiceOwl_DataAccess.IRepository;
+using ServiceOwl_DataAccess.Repository;
 using ServiceOwl_Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddSingleton<ICategoryRepository, CategoryRepository>();
+builder.Services.AddSingleton<ICategoryService, CategoryService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
