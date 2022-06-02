@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_Server", "ServiceOwl_Server\ServiceOwl_Server.csproj", "{E13DE7DF-FAFD-4FFF-8A74-DADEB661B5D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_Server", "ServiceOwl_Server\ServiceOwl_Server.csproj", "{E13DE7DF-FAFD-4FFF-8A74-DADEB661B5D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_Domain", "ServiceOwl_Domain\ServiceOwl_Domain.csproj", "{F95E9BDE-27AF-4501-B766-92D768BEDBA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_Domain", "ServiceOwl_Domain\ServiceOwl_Domain.csproj", "{F95E9BDE-27AF-4501-B766-92D768BEDBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_DataAccess", "ServiceOwl_DataAccess\ServiceOwl_DataAccess.csproj", "{6B3F11B1-8830-4402-B47A-012289C25E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_DataAccess", "ServiceOwl_DataAccess\ServiceOwl_DataAccess.csproj", "{6B3F11B1-8830-4402-B47A-012289C25E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_Application", "ServiceOwl_Application\ServiceOwl_Application.csproj", "{C185E230-1D3B-4D72-A737-BA410F825BD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_Application", "ServiceOwl_Application\ServiceOwl_Application.csproj", "{C185E230-1D3B-4D72-A737-BA410F825BD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_Client", "ServiceOwl_Client\ServiceOwl_Client.csproj", "{3A15AC7E-134E-43CC-B910-189AF8414005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_Client", "ServiceOwl_Client\ServiceOwl_Client.csproj", "{3A15AC7E-134E-43CC-B910-189AF8414005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceOwl_API", "ServiceOwl_API\ServiceOwl_API.csproj", "{3E19788A-9026-4D90-AE36-78352F80A20E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceOwl_API", "ServiceOwl_API\ServiceOwl_API.csproj", "{3E19788A-9026-4D90-AE36-78352F80A20E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

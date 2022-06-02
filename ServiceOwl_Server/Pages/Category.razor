@@ -1,0 +1,41 @@
+﻿@page "/category"
+@using AutoMapper
+@using ServiceOwl_Application.Service.IService
+@using ServiceOwl_DataAccess.DTO
+@using ServiceOwl_Server.Helpers
+
+@inject ICategoryService _categoryService
+@inject IMapper _mapper
+@inject IJSRuntime _jsRuntime
+@inject NavigationManager _navManager
+
+<EditForm Model="categoryViewModel" OnValidSubmit="CreateCategory">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="categoryname">Name</label>
+            <InputText class="form-control" @bind-Value="categoryViewModel.Name" id="categoryname" placeholder="Category Name" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="categorydescription">Description</label>
+            <InputTextArea class="form-control" @bind-Value="categoryViewModel.Description" id="categorydescription" placeholder="Description" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success mt-2">Submit</button>
+</EditForm>
+
+@code {
+    public CategoryViewModel categoryViewModel { get; set; } = new();
+
+    private async Task CreateCategory()
+    {
+        var categoryDto = new CategoryDto
+            {
+                Name = categoryViewModel.Name,
+                Description = categoryViewModel.Description
+            };
+        await _categoryService.Create(categoryDto);
+        await _jsRuntime.ShowToastr("success", "Category Created Successfully");
+        _navManager.NavigateTo("/");
+    }
+
+}
